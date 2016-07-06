@@ -1,0 +1,95 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+/* End for testing */
+
+
+.page{
+  margin:auto;
+}
+.nav {
+  width:100%;
+  background-color: pink;
+
+}
+.nav li{
+  display:inline;
+  background-color: magenta;
+}
+.nav ul{
+  text-align: center;
+}
+.main{
+  width:auto;
+  background-color: ivory;
+  height:30em;
+}
+.main h3{
+  margin:20em auto;
+}
+.content1{
+  padding:2em;
+  background-color: red;
+  margin:1em auto;
+  }
+.content2{
+  padding:2em;
+  background-color: magenta;
+  margin:1em auto;
+}
+
+@media screen and (min-width:700px){
+  .nav{
+    width:40%;
+    position:absolute;
+  }
+  .content1{
+    width:48%;
+    float:left;
+    clear:both;
+    margin:1%;
+  }
+  .content2{
+    width:48%;
+    float:left;
+    margin:1%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .main{
+    width:66%;
+    height:50%;
+    float:left;
+  }
+
+  .content1{
+    width:30%;
+    height:50%;
+
+    float:left;
+    clear:none;
+  }
+  .content2{
+    width:30%;
+    height:33%;
+    clear:none;
+    float:left;
+
+
+
+  }
+}
+.clearfix{
+  content:"";
+  display:table;
+  clear:both;
+}
